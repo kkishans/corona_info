@@ -10,7 +10,7 @@
              <asp:DropDownList ID="DropDownList1" runat="server" CssClass="c-list">
                 <asp:ListItem Selected="True" Enabled="true">Change contry</asp:ListItem>
                 <asp:ListItem >India</asp:ListItem>
-                <asp:ListItem >U S</asp:ListItem>
+                <asp:ListItem >US</asp:ListItem>
                 <asp:ListItem >China</asp:ListItem>
 
              </asp:DropDownList>
@@ -38,8 +38,9 @@
      <div class="home-container">
          <div class="nav-links">
              <a href="#" class="selected">home</a>
-             <a href="#">cases</a>
-             <a href="#">symptoms</a>
+             <a href="#">Overview</a>
+             <a href="#">Symptoms</a>
+             <a href="#">Prevention</a>
              <a href="#">statistics</a>
              <a href="#">about</a>
          </div>

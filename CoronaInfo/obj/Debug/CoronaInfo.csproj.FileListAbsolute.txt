@@ -8,3 +8,8 @@ C:\Users\kishan\Documents\Visual Studio 2010\Projects\corona_info\CoronaInfo\bin
 C:\Users\kishan\Documents\Visual Studio 2010\Projects\corona_info\CoronaInfo\obj\Debug\CoronaInfo.csprojResolveAssemblyReference.cache
 C:\Users\kishan\Documents\Visual Studio 2010\Projects\corona_info\CoronaInfo\obj\Debug\CoronaInfo.dll
 C:\Users\kishan\Documents\Visual Studio 2010\Projects\corona_info\CoronaInfo\obj\Debug\CoronaInfo.pdb
+D:\Projects\ASP.NET\corona_info\CoronaInfo\bin\CoronaInfo.dll
+D:\Projects\ASP.NET\corona_info\CoronaInfo\bin\CoronaInfo.pdb
+D:\Projects\ASP.NET\corona_info\CoronaInfo\obj\Debug\CoronaInfo.csprojResolveAssemblyReference.cache
+D:\Projects\ASP.NET\corona_info\CoronaInfo\obj\Debug\CoronaInfo.dll
+D:\Projects\ASP.NET\corona_info\CoronaInfo\obj\Debug\CoronaInfo.pdb
