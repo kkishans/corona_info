@@ -7,8 +7,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class ="heading">
     
-    <div class="flex-container" align="center">
-         <div class="heading-conutry">
+    <div class="row col-11" align="center">
+         <div class="col-6 heading-conutry">
              <asp:Label ID="labContry" CssClass="conutry-name" runat="server" Text="India"></asp:Label>
              <asp:DropDownList ID="DropDownList1" runat="server" CssClass="c-list">
                 <asp:ListItem Selected="True" Enabled="true">Change contry</asp:ListItem>
@@ -18,8 +18,8 @@
 
              </asp:DropDownList>
         </div>
-        <div class="cases-panel">
-            <table cellpadding="5" cellspacing="5" style="border:none; border-collapse:collapse;">
+        <div class="col-5 cases-panel">
+            <table cellpadding="5" cellspacing="5" style="border:none; border-collapse:collapse;font-size:35px;">
                 <tr style="border">
                     <td style="color:lightgreen;">total</td>
                     <td>/</td>
@@ -38,16 +38,7 @@
     </div>
     <!--<img class="corona-backgraoud-image" src="images/220px-SARS-CoV-2_without_background.webp" alt="Alternate Text" />
    -->
-     <div class="home-container">
-         <div class="nav-links">
-             <a href="#" class="selected">home</a>
-             <a href="#">Overview</a>
-             <a href="#">Symptoms</a>
-             <a href="#">Prevention</a>
-             <a href="#">statistics</a>
-             <a href="#">about</a>
-         </div>
-     </div>
+     
 
     <div class="graph-container">
         <!-- chart will display here.. -->

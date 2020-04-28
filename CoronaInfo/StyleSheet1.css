@@ -19,9 +19,15 @@
 }
 .nav-brand
 {
+    
+    
+    margin:10px 0px 0px 10px;
+}
+.nav-brand a
+{
+    text-decoration:none;
     font-size:30px;
     color:#f20d0d;
-    margin:10px 0px 0px 10px;
 }
 .heading
 {
@@ -41,13 +47,8 @@
 }
 .heading-conutry
 {
-    width:49%;
     font-size:55px;
     padding: 30px 0;
-}
-.cases-panel
-{
-     width:49%;
 }
 .conutry-name
 {
@@ -60,47 +61,149 @@
     border: 1px solid lightgray;
     border-radius:3px;
 }
-.home-container
+.nav-links-container-desktop
 {
-    background-color:white;
-    min-height:300px;
-    margin:auto;
-    margin-top:-100px;
-    width:85%;
-    
+    float:right;
+    position:fixed;
+    right:0px;
+    top:5px;    
 }
-.corona-backgraoud-image
-{
-    position: -webkit-sticky;
-    position: sticky;
-    top:400px;
-    left:0px; 
+* {
+  box-sizing: border-box;
 }
 .nav-links a
 {
     text-decoration:none;
     font-size:25px;
-    padding:5px 50px 5px 50px;
-    color:#ff4d4d;
+    padding:5px 30px 5px 30px;
+    color:#ff9999;
 }
-.selected
+.nav-links a:hover
 {
-  padding:7px;
-  border:2px solid #ff9999;
-  width:100px;
-  padding:5px 50px 5px 50px;
+ 
+  border:1px solid white;
+  color:#ff8080;
+  border-radius: 10px 10px 0px 0px;
+}
+.nav-links .selected
+{
+  border:3px solid white;
+  border-bottom:none;
+  color:#ff8080;
   border-radius: 10px 10px 0px 0px;
 }
 .nav-links
 {
   padding-top:20px;
 }
-
 .imgslider
 {
     width:95%;
     height:400px;
     float:none;
-
+}
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color:#fff0e6;/* light orange*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
 
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ff9999;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+   
+   border-left:none;
+   border-right:none;
+  color:#ff8080;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+@media only screen and (min-width: 1200px) {
+  .openbtn {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}

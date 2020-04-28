@@ -15,7 +15,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div style="float:left;width:30%;height:200px;">
+    <div class="overview-page-img-1" style="float:left;width:30%;height:200px;">
         <img src="images/image3.png" class="img"/>
     </div>
     <div style="width:100%;height:205px;padding:10px;">
