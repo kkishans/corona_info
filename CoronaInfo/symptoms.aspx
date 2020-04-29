@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="symptoms.aspx.cs" Inherits="CoronaInfo.symptoms" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
     <style type="text/css">
         .img
         {
@@ -25,13 +26,12 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    
     <div>
     <h2>
         Symptoms of COVID-19
     </h2>
   </div> 
-  <div style="padding:50px;">
+  <div style="">
     <div style="width:50%;float:left;padding:10px;">
         <p class="text">
                Common symptoms:
@@ -57,7 +57,7 @@
         <img src="images/image5.jpg" class="img""/>
    </div>
   </div>
-  <div style="clear:both;padding:30px 40px;">
+  <div style="clear:both;padding-top:30px;">
         <p class="text" style="font-size:20px   ">
             On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days.<br />
             <br />
