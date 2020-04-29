@@ -5,9 +5,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class ="heading">
-    
-    <div class="row col-11" align="center">
+    <div class ="home-baner">
          <div class="col-6 heading-conutry">
              <asp:Label ID="labContry" CssClass="conutry-name" runat="server" Text="India"></asp:Label>
              <asp:DropDownList ID="DropDownList1" runat="server" CssClass="c-list">
@@ -34,7 +32,6 @@
                 </tr>
             </table>
         </div>        
-    </div>
     </div>
     <!--<img class="corona-backgraoud-image" src="images/220px-SARS-CoV-2_without_background.webp" alt="Alternate Text" />
    -->
