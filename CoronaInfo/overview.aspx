@@ -21,6 +21,7 @@
     <div style="width:100%;height:205px;padding:10px;">
         <p class="text">
             Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.<br /> 
+            <br />
             Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment.
         </p>
     </div>
@@ -36,7 +37,9 @@
     <div style="width:60%;float:left;height:205px;padding:10px;">
         <p class="text">
             The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person coughs, sneezes, or exhales. These droplets are too heavy to hang in the air, and quickly fall on floors or surfaces.<br />
+            <br />
             You can be infected by breathing in the virus if you are within close proximity of someone who has COVID-19, or by touching a contaminated surface and then your eyes, nose or mouth.<br />
+            <br />
             If you then touch your mouth or nose without washing your hands first, you may accidentally give that virus an entry point into your own body.
         </p>
     </div> 

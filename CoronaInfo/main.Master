@@ -22,7 +22,7 @@
                 <div class="nav-links">
                     <a href="default.aspx" class="selected">home</a>
                     <a href="overview.aspx">Overview</a>
-                    <a href="#">Symptoms</a>
+                    <a href="symptoms.aspx">Symptoms</a>
                     <a href="precaution.aspx">Prevention</a>
                     <a href="#">statistics</a>
                     <a href="#">about</a> 
