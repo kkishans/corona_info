@@ -11,7 +11,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body >
+<body onclick="closeNav()">
     <form id="form1" runat="server">
     <div class="top">   
         <nav class="navbar">
