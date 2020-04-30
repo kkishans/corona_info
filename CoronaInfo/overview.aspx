@@ -32,6 +32,7 @@
             You can be infected by breathing in the virus if you are within close proximity of someone who has COVID-19, or by touching a contaminated surface and then your eyes, nose or mouth.<br />
             <br />
             If you then touch your mouth or nose without <span>washing your hands first</span>, you may accidentally give that virus an entry point into your own body.
+
         </p>
     </div> 
      <div class="img" >
