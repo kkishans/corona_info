@@ -48,7 +48,42 @@
     </div>
 
     <div class="footer">
-        
+        <div class="row">
+            <div class="col-5">
+                <h1 style="font-size:45px;color:gray;text-align:center">
+                    STAY HOME, 
+                    <br />
+                    STAY SAFE,
+                    <br />
+                    SAFE OTHERS.
+                </h1>
+            </div>
+            <div class="col-6" style="text-align:center;">
+            <div class="nav-brand">
+                <a href="default.aspx">Corona Meter</a>
+            </div>
+                <p class="p-text">
+                    The site give you full information about COVID-19
+                </p>
+               
+                    <asp:TextBox ID="txtfname" runat="server" placeholder="first name" 
+                        CssClass="textbox col-5"  ></asp:TextBox>
+                     <asp:TextBox ID="txtlname" runat="server" placeholder="last name" 
+                         CssClass="textbox col-5"></asp:TextBox>
+                    <asp:TextBox ID="txtmail" runat="server" placeholder="e-mail address" 
+                        TextMode="Email" CssClass="textbox col-11"></asp:TextBox>                   
+                    <asp:TextBox ID="txtmessage" runat="server" placeholder="your message" 
+                        TextMode="MultiLine" CssClass="textbox col-11"></asp:TextBox>        
+                        
+                <asp:Button ID="btnContactus" runat="server" Text="Contact Us" CssClass="btn-submit"/>               
+             </div>
+            <div class="col-11" >
+                <p class="p-text" style="text-align:center;">
+                    <span>copyright by &copy; coronameter.info 2020</span>
+                </p>
+            </div>
+
+        </div>
     </div>
     </form>
 </body>

@@ -7,7 +7,6 @@
     text-align:center;
     width:90%;
     margin:auto;
-     margin-top:100px;
 }
 .navbar
 {
@@ -230,13 +229,34 @@
     color:black;
     padding:40px 0px 40px 0px;
 }
-img
+.img
 {
-   border-radius:10px;
+    width:100%;
+    border-radius: 10px 30px;
 }
 .footer
 {
-    height:200px;
-    bottom:10px;
+    height:auto;
+    width:95%;
+    margin:auto;
+    text-align:center;
     background-color:#fff0e6;
+    border-radius:3px;
+}
+.textbox
+{
+    font-size:25px;
+    border: 1px solid lightgray;
+    padding:3px;
+    border-radius:3px;
+    margin:5px;
+}
+.btn-submit
+{
+    width: 50%;
+    background-color:red;
+    border:none;
+    border-radius:3px;
+    color:White;
+    font-size:35px;
 }
