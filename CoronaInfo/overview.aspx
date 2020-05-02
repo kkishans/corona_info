@@ -6,6 +6,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="heading" >
        Overview
+       <hr width="70%" />
     </div>
     <div class="row">
         <div class="img">
@@ -21,6 +22,7 @@
     </div>
   <div class="heading">
         How it spread?
+      <hr width="70%" />
     </div> 
   <div class="row">
     <div class="col-6">

@@ -5,7 +5,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class ="home-baner">
+    <div class ="home-baner" style="margin-top:100px;">
          <div class="col-6 heading-conutry">
              <asp:Label ID="labContry" CssClass="conutry-name" runat="server" Text="India"></asp:Label>
              <asp:DropDownList ID="DropDownList1" runat="server" CssClass="c-list">
