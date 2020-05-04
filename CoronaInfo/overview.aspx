@@ -9,8 +9,8 @@
        <hr width="70%" />
     </div>
     <div class="row">
-        <div class="img">
-            <img src="images/image3.png" class="col-6" />
+        <div class="col-6" >
+            <img src="images/image3.png" class="img" />
         </div>
         <div class="col-6">
             <p class="p-text">
@@ -35,8 +35,8 @@
 
         </p>
     </div> 
-     <div class="img" >
-        <img class="col-6" height="600px" src="images/spread.png" />
+     <div class="col-6">
+        <img class="img" height="600px" src="images/spread.png" />
    </div>
   </div>
 </asp:Content>

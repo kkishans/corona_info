@@ -12,4 +12,20 @@ function closeNav() {
     }
    isopen = false; 
    // document.getElementById("main").style.marginRight = "0";
+
 }
+/*(function () {
+    current = window.location.pathname.split('/')[1];
+     var a = document.getElementsByTagName("a");
+    for (var i = 1; i < a.length; i++) {
+        var b = a[i];
+       // console.log(a[i]);
+        temp = b.href.toString().split('/')[3];
+        console.log(b.class);    
+        console.log(temp)
+        if (current == temp) {
+            b.Class = "selected";
+        }
+        a[i].class ="";
+  }
+})();*/
