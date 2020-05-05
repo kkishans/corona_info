@@ -7,33 +7,26 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class ="home-baner" style="margin-top:100px;">
          <div class="col-4 heading-conutry">
-             <asp:Label ID="labContry" CssClass="conutry-name" runat="server" Text="India"></asp:Label>
-             <asp:DropDownList ID="DropDownList1" runat="server" CssClass="c-list">
-                <asp:ListItem Selected="True" Enabled="true">Change contry</asp:ListItem>
-                <asp:ListItem >India</asp:ListItem>
-                <asp:ListItem >US</asp:ListItem>
-                <asp:ListItem >China</asp:ListItem>
-
-             </asp:DropDownList>
+             <asp:Label ID="labContry" CssClass="conutry-name" runat="server" Text="India" ForeColor="Black"></asp:Label>
         </div>
         <div class="col-6 cases-panel">
             <table cellpadding="5" cellspacing="5" style="border:none; border-collapse:collapse;font-size:35px;">
                 <tr style="border">
-                    <td style="color:lightgreen;">Confirmed</td>
-                    <td>-</td>
-                    <td style="color:dodgerblue;">recovered </td>
-                    <td>-</td>
-                    <td style="color:green;">deaths </td>
+                    <td style="color:red;">Confirmed</td>
+                    <td></td>
+                    <td style="color:green;">recovered </td>
+                    <td></td>
+                    <td style="color:gray;">deaths </td>
                 </tr>
                 <tr style="border-top: 2px solid lightgray;">
                     <td> 
-                        <asp:Label ID="labConfirmed" runat="server" Text="22547" ForeColor="#FF9933"></asp:Label>  </td>
-                     <td>/</td>
+                        <asp:Label ID="labConfirmed" runat="server" Text="22547" ForeColor="red"></asp:Label>  </td>
+                     <td></td>
                     <td>  
-                        <asp:Label ID="labrecovered" runat="server" Text="560" ForeColor="#FF6600"></asp:Label>   </td>
-                     <td>/</td>
+                        <asp:Label ID="labrecovered" runat="server" Text="560" ForeColor="green"></asp:Label>   </td>
+                     <td></td>
                      <td>
-                         <asp:Label ID="labdeaths" runat="server" Text="560" ForeColor="red"></asp:Label>   
+                         <asp:Label ID="labdeaths" runat="server" Text="560" ForeColor="gray"></asp:Label>   
                      </td>
                 </tr>
             </table>
@@ -44,6 +37,15 @@
      
 
     <div class="graph-container">
-        <asp:Label ID="labTest" runat="server" Text="Label"></asp:Label>
+        <asp:DropDownList ID="DropDownList1" runat="server" CssClass="c-list">
+                <asp:ListItem Selected="True" Enabled="true">District Wise</asp:ListItem>
+                <asp:ListItem >India</asp:ListItem>
+                <asp:ListItem >US</asp:ListItem>
+                <asp:ListItem >China</asp:ListItem>
+
+             </asp:DropDownList>
+        <br />
+        <br />
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
     </div>
 </asp:Content>

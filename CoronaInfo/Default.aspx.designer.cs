@@ -22,15 +22,6 @@ namespace CoronaInfo {
         protected global::System.Web.UI.WebControls.Label labContry;
         
         /// <summary>
-        /// DropDownList1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
-        
-        /// <summary>
         /// labConfirmed control.
         /// </summary>
         /// <remarks>
@@ -58,14 +49,21 @@ namespace CoronaInfo {
         protected global::System.Web.UI.WebControls.Label labdeaths;
         
         /// <summary>
-        /// labTest control.
+        /// DropDownList1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labTest;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
         
+        /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
         /// <summary>
         /// Master property.
         /// </summary>
