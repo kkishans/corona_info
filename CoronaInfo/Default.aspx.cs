@@ -30,11 +30,11 @@ namespace CoronaInfo
                 }
                 List<Conutry> conutries = JsonConvert.DeserializeObject<List<Conutry>>(json_string);
                 //labTest.Text = conutries.Count.ToString();
-                  labTest.Text = "<br> Confirmed        Reconvered      deaths <br>";
+                
                  
                 foreach ( var conutry in conutries)
                 {
-                    labTest.Text += conutry.Confirmed + "&emsp;" + conutry.Recovered + "&emsp;" + conutry.Deaths + " <br>";
+                    
                     labConfirmed.Text = conutry.Confirmed.ToString();
                     labrecovered.Text = conutry.Recovered.ToString();
                     labdeaths.Text = conutry.Deaths.ToString();
@@ -42,7 +42,31 @@ namespace CoronaInfo
             }
             catch (Exception ex)
             {
-                labTest.Text = ex.Message;
+                Response.Write(ex.Message);
+            }
+
+            try
+            {
+                HttpWebRequest webrequest = (HttpWebRequest)WebRequest.Create(string.Format("https://api.covid19india.org/state_district_wise.json"));
+                webrequest.Method = "GET";
+
+                HttpWebResponse webResponse = (HttpWebResponse)webrequest.GetResponse();
+
+                string json_string;
+                using (Stream stream = webResponse.GetResponseStream())
+                {
+                    StreamReader reader = new StreamReader(stream, System.Text.Encoding.UTF8);
+                    json_string = reader.ReadToEnd();
+                }
+
+                var district = JsonConvert.DeserializeObject<dynamic>(json_string);
+
+                
+            }
+            catch (Exception ex)
+            {
+                Label1.Text = ex.Message;
+               
             }
         }
     }
@@ -57,6 +81,11 @@ namespace CoronaInfo
         public int Recovered { get; set; }
         public string status{ get; set;}
         public string   date{get; set;}
+
+    }
+
+    public class District
+    {
 
     }
 }
