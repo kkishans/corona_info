@@ -13,6 +13,8 @@ namespace CoronaInfo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Master.link_set("default.aspx");
+           
             try
             {
                 HttpWebRequest webrequest = (HttpWebRequest)WebRequest.Create(string.Format("https://api.covid19api.com/dayone/country/india"));
@@ -34,7 +36,7 @@ namespace CoronaInfo
                  
                 foreach ( var conutry in conutries)
                 {
-                    labTest.Text += conutry.Confirmed + "&emsp;" + conutry.Recovered + "&emsp;" + conutry.Deaths + " <br>";
+                    labTest.Text = conutry.Confirmed + "&emsp;" + conutry.Recovered + "&emsp;" + conutry.Deaths + " <br>";
                     labConfirmed.Text = conutry.Confirmed.ToString();
                     labrecovered.Text = conutry.Recovered.ToString();
                     labdeaths.Text = conutry.Deaths.ToString();

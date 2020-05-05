@@ -10,7 +10,7 @@
 namespace CoronaInfo {
     
     
-    public partial class symptoms {
+    public partial class about {
         
         /// <summary>
         /// Master property.

@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace CoronaInfo
 {
-    public partial class overview : System.Web.UI.Page
+    public partial class about : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Master.link_set("overview.aspx");
+            Master.link_set("about.aspx");
         }
     }
 }
