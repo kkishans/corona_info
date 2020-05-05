@@ -67,7 +67,7 @@ namespace CoronaInfo
             }
             catch (Exception ex)
             {
-                Label1.Text = ex.Message;
+                labTest.Text = ex.Message;
                
             }
         }

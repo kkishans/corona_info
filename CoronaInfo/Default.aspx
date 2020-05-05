@@ -46,6 +46,6 @@
              </asp:DropDownList>
         <br />
         <br />
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        <asp:Label ID="labTest" runat="server" Text="Label"></asp:Label>
     </div>
 </asp:Content>
