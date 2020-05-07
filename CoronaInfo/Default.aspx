@@ -11,6 +11,10 @@
     google.load('visualization', '1', { packages: ['corechart'] });
 
     </script>
+    <script type="text/javascript">
+        document.getElementById("DropDownList1").options.length = 1; 
+    </script>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class ="home-baner" style="margin-top:100px;">
@@ -42,6 +46,16 @@
     </div>
     <!--<img class="corona-backgraoud-image" src="images/220px-SARS-CoV-2_without_background.webp" alt="Alternate Text" />
    -->
+
+     
+
+    <div class="graph-container">
+        <asp:DropDownList ID="DropDownList1" runat="server" CssClass="c-list">
+                <asp:ListItem Selected="True" Enabled="true">District Wise</asp:ListItem>
+             </asp:DropDownList>
+        <br />
+        <br />
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
     <asp:Label ID="labTest" runat="server" Text="Confirmed case chart"></asp:Label>
     <div class="graph-container" class="col-12">
         <asp:Chart ID="Chart1" runat="server" BorderlineWidth="0" CssClass="chart-img" 

@@ -15,7 +15,22 @@ namespace CoronaInfo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            
+            string[] districts = {"Andaman and Nicobar Islands", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chandigarh", "Chhattisgarh", "Dadra and Nagar Haveli", "Daman and Diu", "Delhi", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu", "Jharkhand", "Karnataka", "Kashmir", "Kerala", "Ladakh", "Lakshadweep", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Puducherry", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttarakhand", "Uttar Pradesh", "West Bengal"};
+            foreach (var item in districts)
+	        {
+		        DropDownList1.Items.Add(item);
+	        }
+            try
+            {
+                HttpWebRequest webrequest = (HttpWebRequest)WebRequest.Create(string.Format("https://api.covid19api.com/dayone/country/india"));
+                webrequest.Method = "GET";
+
+                HttpWebResponse webResponse = (HttpWebResponse)webrequest.GetResponse();
+
             Master.link_set("default.aspx");
+
 
             try
              {
@@ -50,7 +65,15 @@ namespace CoronaInfo
                  Response.Write(ex.Message);
              }
 
-           
+
+                Response.Write(district);
+            }
+            catch (Exception ex)
+            {
+                Label1.Text = ex.Message;
+               
+            }
+
         }
     }
     public class Conutry
