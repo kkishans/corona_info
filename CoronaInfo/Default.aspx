@@ -3,6 +3,10 @@
 <%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
     Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        document.getElementById("DropDownList1").options.length = 1; 
+    </script>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class ="home-baner" style="margin-top:100px;">
@@ -39,10 +43,6 @@
     <div class="graph-container">
         <asp:DropDownList ID="DropDownList1" runat="server" CssClass="c-list">
                 <asp:ListItem Selected="True" Enabled="true">District Wise</asp:ListItem>
-                <asp:ListItem >India</asp:ListItem>
-                <asp:ListItem >US</asp:ListItem>
-                <asp:ListItem >China</asp:ListItem>
-
              </asp:DropDownList>
         <br />
         <br />
