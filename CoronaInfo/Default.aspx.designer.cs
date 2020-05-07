@@ -49,21 +49,33 @@ namespace CoronaInfo {
         protected global::System.Web.UI.WebControls.Label labdeaths;
         
         /// <summary>
-        /// DropDownList1 control.
+        /// labTest control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.Label labTest;
         
         /// <summary>
-        /// Label1 control.
+        /// Chart1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.DataVisualization.Charting.Chart Chart1;
+        
+        /// <summary>
+        /// Master property.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated property.
+        /// </remarks>
+        public new CoronaInfo.main Master {
+            get {
+                return ((CoronaInfo.main)(base.Master));
+            }
+        }
     }
 }

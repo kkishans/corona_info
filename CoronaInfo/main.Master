@@ -22,12 +22,12 @@
             <div class="nav-links-container-desktop" id="nav-links">
                 <div class="nav-links">
                     <ul id="list">
-                        <li><a id="a-1"  href="default.aspx" class="selected">home</a></li>
-                        <li><a id="a-2" href="overview.aspx">Overview</a></li>
-                        <li><a id="a-3" href="symptoms.aspx">Symptoms</a></li>
-                        <li><a id="a-4" href="precaution.aspx">Prevention</a></li>
-                        <li><a id="a-5" href="#">statistics</a></li>
-                        <li><a id="a-6" href="#">about</a> </li>
+                        <li><asp:HyperLink ID="linkhome" runat="server"  NavigateUrl="default.aspx">home</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="linkoverview" runat="server"  NavigateUrl="overview.aspx">overview</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="linksymptoms" runat="server" NavigateUrl="symptoms.aspx">symptoms</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="linkprevention" runat="server" NavigateUrl="precaution.aspx">prevention</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="linkstatistics" runat="server" NavigateUrl="statistic.aspx">statistics</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="linkabout" runat="server" NavigateUrl="about.aspx">about</asp:HyperLink></li>
                     </ul>                   
                 </div>
                 <input type="button" value="&#9776;" class="openbtn" onclick="openNav()"/>

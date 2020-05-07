@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CoronaInfo.Default" %>
-
+<%@ MasterType VirtualPath="main.Master" %>
 <%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
     Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
@@ -38,6 +38,7 @@
     </div>
     <!--<img class="corona-backgraoud-image" src="images/220px-SARS-CoV-2_without_background.webp" alt="Alternate Text" />
    -->
+
      
 
     <div class="graph-container">
@@ -47,5 +48,29 @@
         <br />
         <br />
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    <asp:Label ID="labTest" runat="server" Text="Confirmed case chart"></asp:Label>
+    <div class="graph-container" class="col-12">
+        <asp:Chart ID="Chart1" runat="server" BorderlineWidth="0" CssClass="chart-img" 
+            Width="600px" >
+            <Series>
+                <asp:Series Name="Series1" ChartType="Line">
+                    <Points>
+                                               
+                    </Points>
+                </asp:Series>
+            </Series>
+            <ChartAreas>
+                <asp:ChartArea Name="ChartArea1">
+                    <AxisX Title = "date" >
+                        <MajorGrid Enabled = "false" />
+                    </AxisX>
+                    
+                    <AxisY Title = "Confimed cases">
+                        <MajorGrid Enabled = "false" />
+                    </AxisY>
+
+                </asp:ChartArea>
+            </ChartAreas>
+        </asp:Chart>
     </div>
 </asp:Content>

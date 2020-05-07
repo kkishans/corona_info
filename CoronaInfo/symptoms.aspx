@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="symptoms.aspx.cs" Inherits="CoronaInfo.symptoms" %>
+<%@ MasterType VirtualPath="main.Master" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
     <style type="text/css">

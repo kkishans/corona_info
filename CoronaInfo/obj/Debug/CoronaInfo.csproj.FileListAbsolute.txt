@@ -5,7 +5,6 @@ C:\Users\kishan\documents\visual studio 2010\Projects\CoronaInfo\CoronaInfo\obj\
 C:\Users\kishan\documents\visual studio 2010\Projects\CoronaInfo\CoronaInfo\obj\Debug\CoronaInfo.csprojResolveAssemblyReference.cache
 C:\Users\kishan\Documents\Visual Studio 2010\Projects\corona_info\CoronaInfo\bin\CoronaInfo.dll
 C:\Users\kishan\Documents\Visual Studio 2010\Projects\corona_info\CoronaInfo\bin\CoronaInfo.pdb
-C:\Users\kishan\Documents\Visual Studio 2010\Projects\corona_info\CoronaInfo\obj\Debug\CoronaInfo.csprojResolveAssemblyReference.cache
 C:\Users\kishan\Documents\Visual Studio 2010\Projects\corona_info\CoronaInfo\obj\Debug\CoronaInfo.dll
 C:\Users\kishan\Documents\Visual Studio 2010\Projects\corona_info\CoronaInfo\obj\Debug\CoronaInfo.pdb
 D:\Projects\ASP.NET\corona_info\CoronaInfo\bin\CoronaInfo.dll
@@ -18,3 +17,4 @@ C:\Users\kishan\Documents\Visual Studio 2010\Projects\corona_info\CoronaInfo\bin
 C:\Users\kishan\Documents\Visual Studio 2010\Projects\corona_info\CoronaInfo\bin\Newtonsoft.Json.xml
 D:\Projects\ASP.NET\corona_info\CoronaInfo\bin\Newtonsoft.Json.pdb
 D:\Projects\ASP.NET\corona_info\CoronaInfo\bin\Newtonsoft.Json.xml
+C:\Users\kishan\Documents\Visual Studio 2010\Projects\corona_info\CoronaInfo\obj\Debug\CoronaInfo.csprojResolveAssemblyReference.cache

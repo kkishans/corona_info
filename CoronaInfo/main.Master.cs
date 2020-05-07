@@ -13,5 +13,25 @@ namespace CoronaInfo
         {
 
         }
+        public void link_set(string link)
+        {
+            List<HyperLink> mylinks = new List<HyperLink>();
+            mylinks.Add(linkhome);
+            mylinks.Add(linkstatistics);
+            mylinks.Add(linksymptoms);
+            mylinks.Add(linkoverview);
+            mylinks.Add(linkprevention);
+            mylinks.Add(linkabout);
+
+            foreach (var a in mylinks)
+            {
+                if (a.NavigateUrl.ToString().Equals(link))
+                {
+                    a.CssClass = "selected";
+                }
+                else
+                    a.CssClass = a.CssClass.Replace("selected", "");
+            }
+        }
     }
 }

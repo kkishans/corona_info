@@ -11,5 +11,17 @@ namespace CoronaInfo {
     
     
     public partial class precaution {
+        
+        /// <summary>
+        /// Master property.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated property.
+        /// </remarks>
+        public new CoronaInfo.main Master {
+            get {
+                return ((CoronaInfo.main)(base.Master));
+            }
+        }
     }
 }
