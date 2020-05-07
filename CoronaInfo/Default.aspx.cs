@@ -33,12 +33,13 @@ namespace CoronaInfo
                      json_string = reader.ReadToEnd();
                  }
                  List<Conutry> conutries = JsonConvert.DeserializeObject<List<Conutry>>(json_string);
-
                  
                  foreach ( var conutry in conutries)
                  {
 
-                     Chart1.Series["Series1"].Points.AddXY(conutry.date.ToString(), conutry.Confirmed);
+                     DateTime Mdate = DateTime.Parse(conutry.date);
+                     string date= Mdate.ToShortDateString();
+                     Chart1.Series["Series1"].Points.AddXY(date, conutry.Confirmed);
                      labConfirmed.Text = conutry.Confirmed.ToString();
                      labrecovered.Text = conutry.Recovered.ToString();
                      labdeaths.Text = conutry.Deaths.ToString();
