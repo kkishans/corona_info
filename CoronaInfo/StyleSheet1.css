@@ -267,3 +267,17 @@
     color:White;
     font-size:35px;
 }
+@media only screen and (min-width: 1200px) {
+  .chart-img
+    {
+        height:400px;
+        width:1000px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+ .chart-img
+    {
+        height:500px;
+        width:500px;
+    }
+}

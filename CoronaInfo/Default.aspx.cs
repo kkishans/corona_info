@@ -4,9 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.UI.DataVisualization.Charting;
 using System.Net;
 using System.IO;
 using Newtonsoft.Json;
+using System.Collections;
 namespace CoronaInfo
 {
     public partial class Default : System.Web.UI.Page
@@ -14,62 +16,40 @@ namespace CoronaInfo
         protected void Page_Load(object sender, EventArgs e)
         {
             Master.link_set("default.aspx");
-           
+
             try
-            {
-                HttpWebRequest webrequest = (HttpWebRequest)WebRequest.Create(string.Format("https://api.covid19api.com/dayone/country/india"));
-                webrequest.Method = "GET";
+             {
+                 HttpWebRequest webrequest = (HttpWebRequest)WebRequest.Create(string.Format("https://api.covid19api.com/dayone/country/india"));
+                 webrequest.Method = "GET";
 
-                HttpWebResponse webResponse = (HttpWebResponse)webrequest.GetResponse();
+                 HttpWebResponse webResponse = (HttpWebResponse)webrequest.GetResponse();
 
-               // labTest.Text = webResponse.StatusCode.ToString() + " " + webResponse.Server+"<br>";
+                // labTest.Text = webResponse.StatusCode.ToString() + " " + webResponse.Server+"<br>";
 
-                string json_string;
-                using (Stream stream = webResponse.GetResponseStream())
-                {
-                    StreamReader reader = new StreamReader(stream, System.Text.Encoding.UTF8);
-                    json_string = reader.ReadToEnd();
-                }
-                List<Conutry> conutries = JsonConvert.DeserializeObject<List<Conutry>>(json_string);
-                //labTest.Text = conutries.Count.ToString();
-                
+                 string json_string;
+                 using (Stream stream = webResponse.GetResponseStream())
+                 {
+                     StreamReader reader = new StreamReader(stream, System.Text.Encoding.UTF8);
+                     json_string = reader.ReadToEnd();
+                 }
+                 List<Conutry> conutries = JsonConvert.DeserializeObject<List<Conutry>>(json_string);
+
                  
-                foreach ( var conutry in conutries)
-                {
-                    labTest.Text = conutry.Confirmed + "&emsp;" + conutry.Recovered + "&emsp;" + conutry.Deaths + " <br>";                   
-                    labConfirmed.Text = conutry.Confirmed.ToString();
-                    labrecovered.Text = conutry.Recovered.ToString();
-                    labdeaths.Text = conutry.Deaths.ToString();
-                }
-            }
-            catch (Exception ex)
-            {
-                Response.Write(ex.Message);
-            }
+                 foreach ( var conutry in conutries)
+                 {
 
-            try
-            {
-                HttpWebRequest webrequest = (HttpWebRequest)WebRequest.Create(string.Format("https://api.covid19india.org/state_district_wise.json"));
-                webrequest.Method = "GET";
+                     Chart1.Series["Series1"].Points.AddXY(conutry.date.ToString(), conutry.Confirmed);
+                     labConfirmed.Text = conutry.Confirmed.ToString();
+                     labrecovered.Text = conutry.Recovered.ToString();
+                     labdeaths.Text = conutry.Deaths.ToString();
+                 }
+             }
+             catch (Exception ex)
+             {
+                 Response.Write(ex.Message);
+             }
 
-                HttpWebResponse webResponse = (HttpWebResponse)webrequest.GetResponse();
-
-                string json_string;
-                using (Stream stream = webResponse.GetResponseStream())
-                {
-                    StreamReader reader = new StreamReader(stream, System.Text.Encoding.UTF8);
-                    json_string = reader.ReadToEnd();
-                }
-
-                var district = JsonConvert.DeserializeObject<dynamic>(json_string);
-
-                
-            }
-            catch (Exception ex)
-            {
-                labTest.Text = ex.Message;
-               
-            }
+           
         }
     }
     public class Conutry

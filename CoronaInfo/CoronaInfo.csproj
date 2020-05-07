@@ -114,6 +114,7 @@
       <DependentUpon>precaution.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Record.cs" />
     <Compile Include="statistic.aspx.cs">
       <DependentUpon>statistic.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

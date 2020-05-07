@@ -34,18 +34,29 @@
     </div>
     <!--<img class="corona-backgraoud-image" src="images/220px-SARS-CoV-2_without_background.webp" alt="Alternate Text" />
    -->
-     
+    <asp:Label ID="labTest" runat="server" Text="Confirmed case chart"></asp:Label>
+    <div class="graph-container" class="col-12">
+        <asp:Chart ID="Chart1" runat="server" BorderlineWidth="0" CssClass="chart-img" 
+            Width="600px" >
+            <Series>
+                <asp:Series Name="Series1" ChartType="Line">
+                    <Points>
+                                               
+                    </Points>
+                </asp:Series>
+            </Series>
+            <ChartAreas>
+                <asp:ChartArea Name="ChartArea1">
+                    <AxisX Title = "date" >
+                        <MajorGrid Enabled = "false" />
+                    </AxisX>
+                    
+                    <AxisY Title = "Confimed cases">
+                        <MajorGrid Enabled = "false" />
+                    </AxisY>
 
-    <div class="graph-container">
-        <asp:DropDownList ID="DropDownList1" runat="server" CssClass="c-list">
-                <asp:ListItem Selected="True" Enabled="true">District Wise</asp:ListItem>
-                <asp:ListItem >India</asp:ListItem>
-                <asp:ListItem >US</asp:ListItem>
-                <asp:ListItem >China</asp:ListItem>
-
-             </asp:DropDownList>
-        <br />
-        <br />
-        <asp:Label ID="labTest" runat="server" Text="Label"></asp:Label>
+                </asp:ChartArea>
+            </ChartAreas>
+        </asp:Chart>
     </div>
 </asp:Content>
