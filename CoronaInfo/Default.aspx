@@ -3,6 +3,14 @@
 <%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
     Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript">      </script>
+
+    <script type="text/javascript" src="//www.google.com/jsapi"></script>
+<script type="text/javascript">
+
+    google.load('visualization', '1', { packages: ['corechart'] });
+
+    </script>
     <script type="text/javascript">
         document.getElementById("DropDownList1").options.length = 1; 
     </script>
@@ -78,9 +86,9 @@
     <asp:Label ID="labTest" runat="server" Text="Confirmed case chart"></asp:Label>
     <div class="graph-container" class="col-12">
         <asp:Chart ID="Chart1" runat="server" BorderlineWidth="0" CssClass="chart-img" 
-            Width="600px" >
+            Width="1000px" >
             <Series>
-                <asp:Series Name="Series1" ChartType="Line">
+                <asp:Series Name="Series1" ChartType="bar">
                     <Points>
                                                
                     </Points>

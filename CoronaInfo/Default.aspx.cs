@@ -41,6 +41,7 @@ namespace CoronaInfo
             {
                 StreamReader reader = new StreamReader(stream, System.Text.Encoding.UTF8);
                 json_string = reader.ReadToEnd();
+
             }
             List<Conutry> conutries = JsonConvert.DeserializeObject<List<Conutry>>(json_string);
 
