@@ -7,6 +7,21 @@
         document.getElementById("DropDownList1").options.length = 1; 
     </script>
 
+    <style >
+        .table {
+              border-collapse: collapse;
+              width: 100%;
+        }
+
+        .th, .td {
+          text-align: left;
+          padding: 8px;
+        }
+
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        
+    </style>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class ="home-baner" style="margin-top:100px;">
@@ -47,7 +62,19 @@
              </asp:DropDownList>
         <br />
         <br />
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        <asp:Table ID="dataTable" runat="server">
+            <asp:TableRow>
+                <asp:TableHeaderCell CssClass="th">State</asp:TableHeaderCell>
+                <asp:TableHeaderCell CssClass="th">Confirmed</asp:TableHeaderCell>
+                <asp:TableHeaderCell CssClass="th">Active</asp:TableHeaderCell>
+                <asp:TableHeaderCell CssClass="th">Recovered</asp:TableHeaderCell>
+                <asp:TableHeaderCell CssClass="th">Deaths</asp:TableHeaderCell>
+            </asp:TableRow>
+        </asp:Table>
+        <br />
+        <br />
+        <br />
+    </div>
     <asp:Label ID="labTest" runat="server" Text="Confirmed case chart"></asp:Label>
     <div class="graph-container" class="col-12">
         <asp:Chart ID="Chart1" runat="server" BorderlineWidth="0" CssClass="chart-img" 
@@ -74,3 +101,4 @@
         </asp:Chart>
     </div>
 </asp:Content>
+

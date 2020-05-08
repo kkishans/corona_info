@@ -15,6 +15,7 @@ D:\Projects\ASP.NET\corona_info\CoronaInfo\obj\Debug\CoronaInfo.pdb
 C:\Users\kishan\Documents\Visual Studio 2010\Projects\corona_info\CoronaInfo\bin\Newtonsoft.Json.dll
 C:\Users\kishan\Documents\Visual Studio 2010\Projects\corona_info\CoronaInfo\bin\Newtonsoft.Json.pdb
 C:\Users\kishan\Documents\Visual Studio 2010\Projects\corona_info\CoronaInfo\bin\Newtonsoft.Json.xml
-D:\Projects\ASP.NET\corona_info\CoronaInfo\bin\Newtonsoft.Json.pdb
 D:\Projects\ASP.NET\corona_info\CoronaInfo\bin\Newtonsoft.Json.xml
 C:\Users\kishan\Documents\Visual Studio 2010\Projects\corona_info\CoronaInfo\obj\Debug\CoronaInfo.csprojResolveAssemblyReference.cache
+D:\Projects\ASP.NET\corona_info\CoronaInfo\bin\Newtonsoft.Json.dll
+D:\Projects\ASP.NET\corona_info\CoronaInfo\bin\PayPalCoreSDK.dll
